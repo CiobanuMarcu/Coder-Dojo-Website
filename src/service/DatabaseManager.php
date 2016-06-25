@@ -23,9 +23,9 @@ class DatabaseManager
         return $conn;
     }
 
-    function closeConnection($connection)
+    function closeConnection($conn)
     {
-        mysqli_close($connection);
+        mysqli_close($conn);
     }
 }
 

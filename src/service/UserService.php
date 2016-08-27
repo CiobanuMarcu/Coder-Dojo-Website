@@ -6,6 +6,7 @@
  * Time: 12:49
  */
 
+
 namespace service;
 
 
@@ -23,4 +24,30 @@ class UserService
 
         return $user;
     }
+    static function user_connect ($name, $parola)
+    {
+        //establishing connection
+        include ('DatabaseManager.php');
+        $connection = getConnection();
+        $query = sprintf ("SELECT * FROM utilizator WHERE username = '%s' AND parola = '%s'",
+            mysqli_real_escape_string($connection, $name),
+            mysqli_real_escape_string($connection, $parola)
+        );
+        $result = mysqli_query($connection, $query);
+        $rows = mysqli_num_rows($result);
+        if($rows == 1)
+        {
+            $_SESSION["logged_in"] = true;
+            $_SESSION["name"] = $_POST['username'];
+            closeConnection($connection);
+            header('Location: ../main_page.php');
+        }
+        else
+        {
+            echo 'The username or password are incorrect!';
+            header('Location: ../Login/login.php');
+        }
+        closeConnection($connection);
+    }
 }
+

@@ -1,21 +1,13 @@
-<?php
-//include('../login/db.php');
-session_start();
-
-{
-    
-    $connection = getConnection();
-  
-    $user = mysqli_real_escape_string($connection, $_POST['username']);
-  
-    $pass = mysqli_real_escape_string($connection, $_POST['parola']);
-  
-    echo $_POST['username'];
-  
-    echo $_POST['parola'];
-
-    $fetch=mysqli_query($connection, "SELECT id FROM `coderdojo_db_1_0` WHERE username='$username' AND password='$parola'");
-
-}
-
-?>
+<html>
+    <head>
+        <title>Login to Coder Dojo Iasi</title>
+    </head>
+<body>
+    <form id='login_form' method="post" action="../logic/login_logic.php">
+        <h2>Login</h2>
+        <input type="text" name="username"/>
+        <input type="password" name="parola"/>
+        <input type="submit" name="submit" value="Login"/>
+    </form>
+</body>
+</html

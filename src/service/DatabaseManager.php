@@ -6,27 +6,22 @@
  * Time: 12:48
  */
 
-namespace service;
 
-
-class DatabaseManager
+function getConnection()
 {
-    function getConnection()
-    {
-        $conn = mysqli_connect('localhost', '', 'coderdojodb');
+    $conn = mysqli_connect('localhost', 'root', '', 'coderdojo');
 
-        if (!$conn) {
+    if (!$conn) {
 
-            die("Connection failed:" . mysqli_connect_error());
+        die("Connection failed:" . mysqli_connect_error());
 
-        }
-        return $conn;
     }
-
-    function closeConnection($conn)
-    {
-        mysqli_close($conn);
-    }
+    return $conn;
 }
 
-?>
+function closeConnection($conn)
+{
+    mysqli_close($conn);
+}
+
+

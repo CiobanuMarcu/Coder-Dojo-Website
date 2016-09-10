@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Login to Coder Dojo Iasi</title>
+        <title><?php print $this ->title ?></title>
         <link rel="stylesheet" href="../css/main.css">
     </head>
 <body>

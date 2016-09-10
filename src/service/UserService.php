@@ -45,7 +45,7 @@ class UserService
         else
         {
             echo 'The username or password are incorrect!';
-            header('Location: ../Login/login.php');
+            header('Location: ../login.php');
         }
         closeConnection($connection);
     }

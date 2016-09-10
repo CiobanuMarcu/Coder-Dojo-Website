@@ -1,0 +1,18 @@
+.login_form {
+    top: 150px;
+    position: relative;
+    width: 400px;
+    height: 270px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.field-set {
+    margin:0 10px;
+    background-color: aqua;
+    height:50px;
+}
+
+

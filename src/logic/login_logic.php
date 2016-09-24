@@ -11,6 +11,6 @@ if(isset($_POST['submit']))
 {
     include ('../service/UserService.php');
 
-    \service\UserService::user_connect($_POST['username'], $_POST['parola']);
+    \service\UserService::user_connect($_POST['username'], $_POST['password']);
 }
 

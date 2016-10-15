@@ -1,13 +1,13 @@
 .login_form {
-    top: 150px;
-    position: relative;
-    width: 400px;
-    height: 270px;
-    background-color: #b800ff;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-}
+     top: 150px;
+     position: relative;
+     width: 400px;
+     height: 270px;
+     background-color: #b800ff;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 0;
+ }
 
 .field-set {
     margin:0 10px;
@@ -21,4 +21,9 @@
     border-style: solid;
 }
 
+.TableClass {
+    background-color: #0080ff;
+    margin-left: 10%;
+    border: 5px solid black;
 
+}

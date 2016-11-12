@@ -16,5 +16,12 @@
         <p>Confirma parola: </p><input type="password" name="parola2" required="required" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Introduceti aceeasi parola ca mai sus' : '');"/>
         <input name="submit" type="submit" value="Submit">
     </form>
+    <?php
+    session_start();
+
+    if (isset ($_SESSION['message_error'])){
+        printf("<br/> <p>%s</p>", $_SESSION['message_error']);
+    }
+    ?>
 </body>
 </html>

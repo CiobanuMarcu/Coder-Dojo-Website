@@ -37,8 +37,7 @@ class UserService
         $rows = mysqli_num_rows($result);
         if($rows == 1)
         {
-            $_SESSION["logged_in"] = true;
-            $_SESSION["name"] = $_POST['username'];
+            $_SESSION["user"] = $_POST['username'];
             closeConnection($connection);
             header('Location: ../main_page.php');
         }

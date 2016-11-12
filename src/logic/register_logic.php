@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('../service/DatabaseManager.php');
 if(isset($_REQUEST['submit']))
 {
@@ -15,10 +16,14 @@ if(isset($_REQUEST['submit']))
     if($result === true)
     {
         echo "Record successfully inserted";
+        header("Location:../login.php");
     }
     else
     {
         echo "There is some problem in inserting record: " . mysqli_error($connection);
+        $_SESSION['message_error'] = "There's a problem registering. Please try again!";
+
+        header("Location:../register.php");
     }
     closeConnection($connection);
 }

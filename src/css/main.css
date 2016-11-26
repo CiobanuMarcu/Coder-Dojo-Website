@@ -20,6 +20,12 @@
     height: 200px;
     border-style: solid;
 }
+.user_menu_container{
+    position: relative;
+    padding-left: 70em;
+    padding-top: 2em;
+
+}
 
 .TableClass {
     background-color: #0080ff;

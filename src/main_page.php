@@ -14,6 +14,7 @@
         }
 
         else{
+            include_once ('view/meniu.php');
             printf("Bun-venit, %s", $_SESSION['user']);
         }
         ?>

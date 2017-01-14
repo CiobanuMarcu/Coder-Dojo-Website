@@ -16,9 +16,11 @@
         else{
             include_once ('view/meniu.php');
             printf("Bun-venit, %s", $_SESSION['user']);
+            include_once("service/SessionService.php");
+            SessionService::get_next_sessions();
         }
         ?>
-            <p><a href="../logic/logout_logic.php">Logout</a></p>
+            <p><a href="../src/logic/logout_logic.php">Logout</a></p>
     </div>
     </body>
 </html>

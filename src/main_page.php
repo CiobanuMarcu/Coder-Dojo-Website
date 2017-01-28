@@ -4,7 +4,6 @@
         <title>Main page</title>
     </head>
     <body>
-    <div class="user_menu_container">
         <?php
             session_start();
         if (!isset ($_SESSION['user'])){
@@ -15,12 +14,12 @@
 
         else{
             include_once ('view/meniu.php');
-            printf("Bun-venit, %s", $_SESSION['user']);
+            printf("<div class=\"user_menu_container\"> <p>Bun-venit, %s </p>", $_SESSION['user']);
+            printf("<p><a href=\"../src/logic/logout_logic.php\">Logout</a></p></div>");
             include_once("service/SessionService.php");
             SessionService::get_next_sessions();
         }
         ?>
-            <p><a href="../src/logic/logout_logic.php">Logout</a></p>
-    </div>
+
     </body>
 </html>

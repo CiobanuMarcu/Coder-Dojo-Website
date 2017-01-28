@@ -33,3 +33,10 @@
     border: 5px solid black;
 
 }
+table, td, th, tr{
+    border: 0.1em solid black;
+}
+
+.session-table{
+    background-color: lightsteelblue;
+}

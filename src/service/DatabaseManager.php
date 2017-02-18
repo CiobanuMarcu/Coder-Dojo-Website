@@ -9,7 +9,7 @@
 
 function getConnection()
 {
-    $conn = mysqli_connect('localhost', 'root', '', 'coderdojo');
+    $conn = mysqli_connect('localhost', 'root', 'root', 'coderdojo');
 
     if (!$conn) {
 

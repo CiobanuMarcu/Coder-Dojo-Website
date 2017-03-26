@@ -1,1 +1,4 @@
-console.log ("hello");
+console.log("hello");
+$(function(){
+    $('#jQuery').text('Nice!');
+})

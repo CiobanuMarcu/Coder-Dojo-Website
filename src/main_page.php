@@ -20,7 +20,8 @@
             SessionService::get_next_sessions();
         }
         ?>
-        <p id="jQuery"></p>
+        <p class="header"  id="jQuery" onClick="function(){alert('Bravo, ai deschis o alertă.')}"></p>
+        <p class="header">Rand-ul doi</p>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
 
         <script src="js/main.js"></script>

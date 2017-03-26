@@ -36,7 +36,7 @@ class SessionService{
                 if (self::is_subscribed($s -> data, $_SESSION['user'], $connection)){
                     printf("<td><input type='button' value='Renunta'/></td>");
                 } else {
-                    printf("<td><input type='button' value='Inscrie'/></td>");
+                    printf("<td><input type='button' class='subscribe-button' id='$s->data' value='Inscrie'/></td>");
                 }
 //                printf("\n data %s,ora %s, locatia %s, descriere %s,\n", $s -> data, $s -> ora, $s -> locatia, $s -> descriere);
                 printf("</tr>");

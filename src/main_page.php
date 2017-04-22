@@ -9,7 +9,7 @@
         if (!isset ($_SESSION['user'])){
             header('Location: ../login.php');
     //        echo "Bun-venit,". $_SESSION['user'];
-            printf("Bun-venit, %s", $_SESSION['user']);
+            //printf("Bun-venit, %s", $_SESSION['user']);
         }
 
         else{
@@ -17,7 +17,10 @@
             printf("<div class=\"user_menu_container\"> <p>Bun-venit, %s </p>", $_SESSION['user']);
             printf("<p><a href=\"../src/logic/logout_logic.php\">Logout</a></p></div>");
             include_once("service/SessionService.php");
-            SessionService::get_next_sessions();
+            $sessions = SessionService::get_next_sessions();
+            foreach($sessions as $session){
+                printf('Data este %s', $session -> data);
+            }
         }
         ?>
         <p class="header"  id="jQuery" onClick="function(){alert('Bravo, ai deschis o alertă.')}"></p>

@@ -6,21 +6,24 @@ $(function(){
 
     $('.subscribe-button').on('click',function(){
        var id= $(this).attr('id');
-        alert('Ai apasat subscribe' + id);
-
+        //alert('Ai apasat subscribe' + id);
+        var value = $(this).attr('value');
         var request = $.ajax({
             url: 'logic/register_to_session.php',
             method: 'POST',
             data: {
-                id : id
+                id : id,
+                action : value
             },
             success:  function(data){
 
-                alert('Am reusit: ' + data);
+                location.reload();
             }
 
         });
 
-    })
-})
+    });
+
+});
+
 

@@ -1,4 +1,3 @@
-console.log("hello");
 $(function(){
     $('#jQuery').text('Nice!');
     $('.header').css({'background-color':'red'});
@@ -6,7 +5,7 @@ $(function(){
 
     $('.subscribe-button').on('click',function(){
        var id= $(this).attr('id');
-        //alert('Ai apasat subscribe' + id);
+
         var value = $(this).attr('value');
         var request = $.ajax({
             url: 'logic/register_to_session.php',

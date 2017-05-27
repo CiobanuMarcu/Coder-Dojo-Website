@@ -1,18 +1,18 @@
 .login_form {
-     top: 150px;
-     position: relative;
-     width: 400px;
-     height: 270px;
-     background-color: #b800ff;
-     margin-left: auto;
-     margin-right: auto;
-     margin-bottom: 0;
- }
+    top: 150px;
+    position: relative;
+    width: 400px;
+    height: 270px;
+    background-color: #b800ff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
 
 .field-set {
-    margin:0 10px;
+    margin: 0 10px;
     background-color: aqua;
-    height:50px;
+    height: 50px;
 }
 
 #meniu {
@@ -20,23 +20,60 @@
     height: 200px;
     border-style: solid;
 }
-.user_menu_container{
-    position: relative;
-    padding-left: 70em;
-    padding-top: 2em;
+
+.meniu_header {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.user_menu_container p {
+    display: inline;
+}
+
+.user_menu_container p:last-child {
+    padding-left: 10px;
+}
+
+.user_menu_container {
+    float: right;
+}
+
+.meniu {
+    float: left;
+}
+
+.meniu a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.meniu a:hover {
+    text-decoration: underline;
+}
+
+.meniu a:first-child {
+    padding-right: 10px;
+    border-right: 1px #666666 solid;
 
 }
 
-.TableClass {
-    background-color: #0080ff;
-    margin-left: 10%;
-    border: 5px solid black;
-
-}
-table, td, th, tr{
-    border: 0.1em solid black;
+.meniu a:last-child {
+    padding-left: 10px;
 }
 
-.session-table{
-    background-color: lightsteelblue;
+.session-table {
+    background-color: #fcfcfc;
+}
+
+.session-table input[type='button']{
+    border:0;
+    outline: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 3px;
+    width: 100px;
+    text-align:center;
+    background-color: #babfa8;
+
 }

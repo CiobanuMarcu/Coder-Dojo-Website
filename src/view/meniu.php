@@ -1,26 +1,11 @@
-<html>
-<link rel="stylesheet" type="text/css" href="../css/main.css">
-<?php
-/**
- * Created by PhpStorm.
- * User: MJ
- * Date: 17-Sep-16
- * Time: 2:01 PM
- */
-?>
-<body>
+<div class="meniu">
 
 
-    <table class="TableClass">
+           
+        <a href="../login.php">Home</a>
+        <a href="../about.php">About</a>
+          
 
-        <tr>
-               
-            <th><a href="../login.php">Home</a></th>
-                 
-            <th><a href="../about.php">About</a></th>  
 
-        </tr>
-    </table>
+</div>
 
-</body>
-</html>

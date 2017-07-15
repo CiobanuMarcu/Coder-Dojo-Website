@@ -2,8 +2,8 @@
     top: 150px;
     position: relative;
     width: 400px;
-    height: 270px;
-    background-color: #b800ff;
+    height: 200px;
+    background-color: #66b2ff;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -11,10 +11,23 @@
 
 .field-set {
     margin: 0 10px;
-    background-color: aqua;
+    background-color: #e0e0e0;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 4px;
+}
+.username-wrapper {
     height: 50px;
 }
-
+.password-wrapper {
+    height: 50px;
+}
+#submit{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
 #meniu {
     width: 400px;
     height: 200px;

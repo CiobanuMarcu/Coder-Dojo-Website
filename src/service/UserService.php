@@ -31,7 +31,7 @@ class UserService
         $connection = getConnection();
         $query = sprintf ("SELECT * FROM utilizator WHERE username = '%s' AND parola = '%s'",
             mysqli_real_escape_string($connection, $name),
-            mysqli_real_escape_string($connection, $parola)
+           sha1 (mysqli_real_escape_string($connection, $parola))
         );
         $result = mysqli_query($connection, $query);
         $rows = mysqli_num_rows($result);

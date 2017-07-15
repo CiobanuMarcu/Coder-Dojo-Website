@@ -8,9 +8,14 @@ if(isset($_REQUEST['submit']))
 //        echo "please fill the empty field.";
 //    }
 
-
+    $nume=$_REQUEST["nume"];
+    $prenume=$_REQUEST["prenume"];
+    $username=$_REQUEST["username"];
+    $email=$_REQUEST['email'];
+    $telefon=$_REQUEST['telefon'];
+    $parola=sha1($_REQUEST["parola"]);
     $sql="insert into utilizator(nume, prenume, username, email, telefon, parola, data_inregistrarii) values
-('$_REQUEST[nume]', '$_REQUEST[prenume]', '$_REQUEST[username]', '$_REQUEST[email]', '$_REQUEST[telefon]', '$_REQUEST[parola]', now())";
+     ('$nume', '$prenume', '$username', '$email', '$telefon', '$parola', now())";
     $connection=getConnection();
     $result=mysqli_query($connection, $sql);
     if($result === true)

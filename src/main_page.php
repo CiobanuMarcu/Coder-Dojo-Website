@@ -5,6 +5,7 @@ session_start();
 <html>
 <head>
     <link rel="stylesheet" href="css/main.css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <title>Main page</title>
 </head>
 <body>

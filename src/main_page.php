@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <html>
 <head>
     <link rel="stylesheet" href="css/main.css">
@@ -5,7 +9,6 @@
 </head>
 <body>
 <?php
-session_start();
 if (!isset ($_SESSION['user'])) {
     header('Location: ../login.php');
 } else {

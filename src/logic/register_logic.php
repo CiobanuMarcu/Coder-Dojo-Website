@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 include('../service/DatabaseManager.php');
 if(isset($_REQUEST['submit']))
 {

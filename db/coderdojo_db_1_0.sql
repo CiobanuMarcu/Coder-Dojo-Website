@@ -50,7 +50,7 @@ DROP TABLE IF EXISTS `inscrieri`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `inscrieri` (
-  `id_inscriere` int(11) NOT NULL,
+  `id_inscriere` int(11) NOT NULL AUTO_INCREMENT,
   `id_utilizator` varchar(30) DEFAULT NULL,
   `data` date DEFAULT NULL,
   PRIMARY KEY (`id_inscriere`),

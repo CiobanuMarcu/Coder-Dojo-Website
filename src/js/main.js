@@ -14,11 +14,9 @@ $(function(){
                 id : id,
                 action : value
             },
-            success:  function(data){
-
+            success:  function(){
                 location.reload();
             }
-
         });
 
     });

@@ -39,7 +39,7 @@ class UserService
         {
             $_SESSION["user"] = $_POST['username'];
             closeConnection($connection);
-            header('Location: ../main_page.php');
+            header('Location: ../index.php');
         }
         else
         {

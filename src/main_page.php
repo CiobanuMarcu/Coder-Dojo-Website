@@ -11,7 +11,7 @@ session_start();
 <body>
 <?php
 if (!isset ($_SESSION['user'])) {
-    header('Location: ../login.php');
+    header('Location: login.php');
 } else {
     printf("<div class=\"meniu_header\">");
     include_once('view/meniu.php');

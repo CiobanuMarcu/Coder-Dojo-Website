@@ -21,7 +21,7 @@ if(!isset ($_SESSION['user'])) {
     printf("</div>");
 }
 ?>
-<p>Site realizat Ã®n cadrul Coder Dojo Optymyze IaÈ™i</p>
+<p>Site realizat în cadrul Coder Dojo Optymyze Iași</p>
 <p>Developeri:</p>
 <ol>
     <li>Gavrilean Cristian</li>

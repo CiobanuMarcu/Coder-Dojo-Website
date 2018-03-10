@@ -41,19 +41,6 @@
         </div>
     </div>
 
-<!--</form method="post" action="logic/register_logic.php">-->
-<!---->
-<!--    <p>Introduceti datele de utilizator pentru inregistrare</p>-->
-<!--    <form method="post" action="logic/register_logic.php">-->
-<!--        <p>Nume: </p></p><input type="text" name="nume" required="required"/><br>-->
-<!--        <p>Prenume: </p><input type="text" name="prenume" required="required"/><br>-->
-<!--        <p>Username: </p><input type="text" name="username" required="required"/><br>-->
-<!--        <p>Email: </p><input type="email" name="email" required="required"/><br>-->
-<!--        <p>Telefon: </p><input type="tel" name="telefon" required="required"/><br>-->
-<!--        <p>Parola: </p><input type="password" name="parola" required="required" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Parola trebuie sa contina macar 6 semne' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;"/>-->
-<!--        <p>Confirma parola: </p><input type="password" name="parola2" required="required" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Introduceti aceeasi parola ca mai sus' : '');"/>-->
-<!---->
-<!--    </form>-->
     <?php
     session_start();
 

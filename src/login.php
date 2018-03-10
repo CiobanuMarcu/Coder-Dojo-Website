@@ -22,7 +22,7 @@
                     <h4>Login</h4>
                     <input type="text" name="username" id="userName" class="form-control input-sm chat-input" placeholder="username" />
                     </br>
-                    <input type="text" name="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                    <input type="password" name="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password"     />
                     </br>
                     <div class="wrapper">
             <span class="group-btn">

@@ -45,7 +45,7 @@ class UserService
         {
             echo 'The username or password are incorrect!';
             $_SESSION["iserror"]="true";
-            echo '<script>window.location.href="/login.php";</script>';
+            echo '<script>window.location.href="../login.php";</script>';
             //header('Location: ../login.php');
         }
         closeConnection($connection);

@@ -27,8 +27,7 @@
                     <div class="wrapper">
             <span class="group-btn">
                 <input type="button"  onclick="location.href='register.php'" ; value="Register" class="btn btn-primary btn-md" />
-<!--                <a href="#" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>-->
-                <input type="submit"  class="btn btn-primary btn-md" name="submit" value="Login" />
+                <input type="submit" id="submit" class="btn btn-primary btn-md" name="submit" value="Login" />
             </span>
                     </div>
                 </div>
